@@ -1,0 +1,25 @@
+/* Ensure the application occupies the available screen height. */
+#root {
+  min-height: 100vh;
+}
+
+/* Apply consistent transition behavior to interactive elements. */
+button,
+a {
+  transition: all 0.2s ease;
+}
+
+/*
+==================================================
+CONCEPTS USED IN THIS FILE
+==================================================
+
+1. Full Viewport Stature (#root):
+   Ensures the root React mounting node expands to at least 100vh,
+   preventing background color clipping on screens with minimal content.
+
+2. CSS Transition Smoothing:
+   Applies smooth 200ms easing transitions to interactive hover states
+   across all buttons and hyperlinks.
+==================================================
+*/

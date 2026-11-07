@@ -1,0 +1,139 @@
+/* Main navigation container. */
+.navbar {
+  width: 100%;
+  height: 82px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(8, 11, 20, 0.85);
+  backdrop-filter: blur(16px);
+  position: relative;
+  z-index: 10;
+}
+
+/* Brand logo and text. */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+/* Logo icon container. */
+.brand-icon {
+  width: 39px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(135deg, #7667f8, #5143cf);
+  box-shadow: 0 5px 20px rgba(105, 88, 239, 0.3);
+}
+
+/* Highlight the hub part of the brand. */
+.brand-highlight {
+  color: #9588ff;
+}
+
+/* Center navigation links. */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+/* Navigation link appearance. */
+.navbar-links a {
+  color: #a1a7b8;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Navigation hover effect. */
+.navbar-links a:hover {
+  color: white;
+}
+
+/* Right-side authentication actions. */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Login link. */
+.nav-login {
+  color: #c2c5d0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-login:hover {
+  color: white;
+}
+
+/* Signup button. */
+.nav-signup {
+  padding: 12px 20px;
+  border-radius: 9px;
+  background: #7162e8;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(113, 98, 232, 0.2);
+}
+
+.nav-signup:hover {
+  background: #8173f5;
+  transform: translateY(-2px);
+}
+
+/* Responsive navigation for smaller screens. */
+@media (max-width: 650px) {
+  .navbar {
+    padding: 0 5%;
+    height: 72px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-actions {
+    gap: 14px;
+  }
+
+  .navbar-brand {
+    font-size: 19px;
+  }
+
+  .nav-signup {
+    padding: 10px 13px;
+  }
+}
+
+/*
+==================================================
+CONCEPTS USED IN THIS FILE
+==================================================
+
+1. CSS Flexbox Layout:
+   Aligns logo, central anchor links, and right-hand authentication
+   actions in a single horizontal row (`display: flex; justify-content: space-between`).
+
+2. Backdrop Filter (Glassmorphism):
+   `backdrop-filter: blur(16px)` blurs content scrolling underneath the
+   fixed/sticky navigation bar.
+
+3. Media Queries for Responsive Navigation:
+   `@media (max-width: 650px)` hides non-critical desktop links (`.navbar-links`)
+   to prevent header overcrowding on mobile screens.
+==================================================
+*/

@@ -1,0 +1,210 @@
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12), transparent 35%),
+    radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.10), transparent 35%),
+    #080b14;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  background: rgba(17, 24, 39, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 20px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+}
+
+.auth-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 13px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.auth-back:hover {
+  color: #ffffff;
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 750;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.auth-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a5b4fc;
+}
+
+.brand-highlight {
+  color: #818cf8;
+}
+
+.auth-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.auth-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a5b4fc;
+  background: rgba(99, 102, 241, 0.13);
+  border: 1px solid rgba(129, 140, 248, 0.2);
+  border-radius: 14px;
+}
+
+.auth-heading h1 {
+  color: #f8fafc;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.auth-heading p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px 14px;
+  background: #0b1120;
+  border: 1px solid #263247;
+  border-radius: 9px;
+  color: #f8fafc;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #64748b;
+}
+
+.form-group input:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 14px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.auth-submit:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.auth-message {
+  padding: 11px;
+  border-radius: 8px;
+  background: rgba(99, 102, 241, 0.12);
+  color: #c7d2fe;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.auth-switch {
+  margin-top: 25px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.auth-switch a {
+  color: #a5b4fc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  color: #c4b5fd;
+}
+
+.auth-footer {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  text-align: center;
+  color: #64748b;
+  font-size: 11px;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 26px 20px;
+  }
+
+  .auth-heading h1 {
+    font-size: 22px;
+  }
+}
+
+/*
+==================================================
+CONCEPTS USED IN THIS FILE
+==================================================
+
+1. Radial Gradient Lighting:
+   `radial-gradient(...)` creates subtle glowing indigo ambient lights
+   in opposite corners of the screen against the dark background.
+
+2. Flexbox Centering:
+   `display: flex; justify-content: center; align-items: center; min-height: 100vh;`
+   mathematically centers the authentication card both vertically and horizontally.
+
+3. Form Control Focus Rings:
+   `box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12)` provides an accessible
+   and modern focus ring indicator when typing inside input boxes.
+==================================================
+*/

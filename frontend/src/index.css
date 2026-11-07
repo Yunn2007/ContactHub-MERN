@@ -1,0 +1,57 @@
+/* Import the Inter font from Google Fonts. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Universal reset: apply predictable sizing to all elements. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define global application styles. */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #080b14;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Make buttons and inputs inherit the application's font. */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove default link underlines. */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make buttons display a pointer on hover. */
+button {
+  cursor: pointer;
+}
+
+/*
+==================================================
+CONCEPTS USED IN THIS FILE
+==================================================
+
+1. Universal CSS Reset (* selector):
+   Applies `box-sizing: border-box`, `margin: 0`, and `padding: 0` to
+   all DOM elements so padding and borders are included in element total
+   width and height, preventing accidental layout overflows.
+
+2. Typography Inheritance:
+   Form controls (`button`, `input`, `textarea`, `select`) by default use
+   browser user-agent fonts. `font: inherit` forces them to use the global
+   "Inter" font family.
+
+3. Global Background & Dark Theme Baseline:
+   Sets the deep charcoal canvas background (`#080b14`) and primary font
+   color (`#f8fafc`) at the document body level.
+==================================================
+*/
